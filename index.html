@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conectando con WhatsApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- META PIXEL -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;
+      n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;
+      n.push=n; n.loaded=!0; n.version='2.0';
+      n.queue=[];
+      t=b.createElement(e); t.async=!0;
+      t.src=v;
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', 'TU_PIXEL_ID_AQUI');
+    fbq('track', 'PageView');
+    fbq('track', 'Contact');
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=TU_PIXEL_ID_AQUI&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- FIN PIXEL -->
+</head>
+
+<body style="margin:0; background:#e9fff3; display:flex; justify-content:center; align-items:center; height:100vh; font-family:Arial">
+
+  <div style="text-align:center;">
+    <div style="width:50px;height:50px;border:5px solid #c8f3df;border-top:5px solid #25D366;border-radius:50%;animation:spin 0.8s linear infinite;margin:auto"></div>
+    <h2 style="color:#1c7f5b;margin-top:20px">Conectando con WhatsApp</h2>
+    <p style="color:#4a8f75">Te redirigimos en un momento…</p>
+  </div>
+
+  <script>
+    setTimeout(function(){
+      window.location.replace(
+        "https://wa.me/5491130338153?text=Hola%20quiero%20acceder%20al%2020%25%20del%20bono"
+      );
+    }, 150);
+  </script>
+
+  <style>
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+
+</body>
+</html>
